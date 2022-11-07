@@ -4,6 +4,7 @@
 
 arrayNomi = []
 arrayVoti = []
+arrayVotiId = []
 
 let students = [
     { name: 'Marco', id: 213, grades: 78 },
@@ -35,3 +36,12 @@ let students = [
  console.log(arrayVoti)
 
 /* Dobbiamo creare un nuovo array di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120 */
+
+students.forEach((element) => {
+    if(element.grades > 70 && element.id > 120){
+        votiSuperioriId = `${element.grades} e ${element.id}`
+    }
+    arrayVotiId.push(votiSuperioriId)
+ })
+
+ console.log(arrayVotiId)
