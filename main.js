@@ -1,3 +1,9 @@
+
+
+/* SNACK 2 */
+
+arrayNomi = []
+
 let students = [
     { name: 'Marco', id: 213, grades: 78 },
     { name: 'Paola', id: 110, grades: 96 },
@@ -9,4 +15,10 @@ let students = [
   ];
 
 
-  arrayNomi = []
+ students.forEach((element)  => {
+    nameMaiuscolo = element.name.toUpperCase();
+    console.log(nameMaiuscolo)
+    arrayNomi.push(nameMaiuscolo)
+ })
+
+  console.log(arrayNomi)
