@@ -3,6 +3,7 @@
 /* SNACK 2 */
 
 arrayNomi = []
+arrayVoti = []
 
 let students = [
     { name: 'Marco', id: 213, grades: 78 },
@@ -14,7 +15,7 @@ let students = [
     { name: 'Francesca', id: 120, grades: 84 },
   ];
 
-
+/* Dobbiamo creare delle targhe con il loro nome in maiuscolo. Ci serve quindi un nuovo array di stringhe. Ogni elemento del nuovo array sarà il nome dello studente ma con tutte le lettere maiuscole. */
  students.forEach((element)  => {
     nameMaiuscolo = element.name.toUpperCase();
     console.log(nameMaiuscolo)
@@ -22,3 +23,15 @@ let students = [
  })
 
   console.log(arrayNomi)
+
+/* Dobbiamo creare un nuovo array con gli studenti che hanno un totale di voti superiore a 70 */
+ students.forEach((element) => {
+    if(element.grades > 70){
+        votiSuperiori = element.grades
+    }
+    arrayVoti.push(votiSuperiori)
+ })
+
+ console.log(arrayVoti)
+
+/* Dobbiamo creare un nuovo array di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120 */
