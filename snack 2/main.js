@@ -29,8 +29,9 @@ students.forEach((element)  => {
 students.forEach((element) => {
     if(element.grades > 70){
         votiSuperiori = element.grades
+        arrayVoti.push(votiSuperiori)
     }
-    arrayVoti.push(votiSuperiori)
+    
  })
 
  console.log(arrayVoti)
@@ -40,8 +41,9 @@ students.forEach((element) => {
 students.forEach((element) => {
     if(element.grades > 70 && element.id > 120){
         votiSuperioriId = `${element.grades} e ${element.id}`
+        arrayVotiId.push(votiSuperioriId)
     }
-    arrayVotiId.push(votiSuperioriId)
+    
  })
 
  console.log(arrayVotiId)
