@@ -1,18 +1,21 @@
 const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
-arrayNuovo = []
+
  let min = parseInt(prompt(`inserisci un numero tra 0 e 6`))
  let max = parseInt(prompt(`inserisci un numero maggiore di quello precedente ma inferiore o uguale A 6`))
 
- //for(let i = 0; i < myArray.length; i++){
-    myArray.forEach((element, index) => {
-        if( index <= min  && index >= max){
-            name = element
-           
-        }
-        arrayNuovo.push(name)
-    })
- //}
+function estrazioneNomi(min, max){
+   const arrayNuovo = []
+   myArray.forEach((element, index) => {
+    if( index > min  && index < max){
+        arrayNuovo.push(element)
+       
+    }
+   
+})
 console.log(arrayNuovo)
+}
+estrazioneNomi(min, max)
+
 
 
 
