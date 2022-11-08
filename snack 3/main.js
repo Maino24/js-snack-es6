@@ -6,22 +6,58 @@
     { name: 'Orbea', peso: 15 },
     { name: 'Ktm', peso: 16 },
     { name: 'Cannondale', peso: 18 },
-    { name: 'Cervelo', peso: 14 },
+    { name: 'Cervelo', peso: 20 },
 
 ]
 
-//let {name, peso} = arrayBici[0]
-//console.log( arrayBici[0] )
+const  {name, peso} = arrayBici[0];
+
+console.log (name,peso); 
+
+let minBici = {
+    name,
+    peso,
+};
+console.log (minBici); 
 
 
-for (i = 0; i < arrayBici.length; i++){
-   const {name, peso} = arrayBici[i]
+let maxBici = {
+    name,
+    peso,
+};
 
-   if (arrayBici.peso > peso){
-    arrayBici = {
-        name,
-        peso,
+console.log (maxBici);  
+
+
+for (let i = 0; i < arrayBici.length; i++) {  
+    const {name, peso} = arrayBici[i];
+    console.log (arrayBici[i]); 
+
+    if (minBici.peso > peso) {    
+        
+        console.log ("bici leggera " + peso); 
+
+        minBici = {
+            name,
+            peso,
+        };
+    };
+
+    if (maxBici.peso < peso){
+
+        console.log ("Bici pesante " + peso); 
+
+        maxBici = {
+            name,
+            peso,
+        };
     }
     
-   }
 }
+
+
+
+console.log(`La bici più leggera è la ${minBici.name}, pesa ${minBici.peso} kg.`)
+
+
+
