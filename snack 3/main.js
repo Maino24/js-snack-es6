@@ -56,13 +56,13 @@ for (let i = 0; i < arrayBici.length; i++) {
 }
 
 
-
+document.getElementById(`output`).innerHTML = `La bici più leggera è:${minBici.name} e pesa: ${minBici.peso}`
 console.log(`La bici più leggera è la ${minBici.name}, pesa ${minBici.peso} kg.`)
 
 
 /* CORREZIONE */
 
-
+/*
 const bici = [
 
     { name: `Pinarello`, peso: 10},
@@ -86,6 +86,6 @@ let biciLeggera = bici[0]
         }
 
 }
-
+document.getElementById(`output`).innerHTML = `La bici più leggera è:${biciLeggera.name} e pesa: ${biciLeggera.peso}`
 console.log(biciLeggera)
-//document.getElementById(`output`).innerHTML = `${biciLeggera}`
+*/
