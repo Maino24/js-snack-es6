@@ -31,5 +31,5 @@ const teamsCopia = teams.map( (elem) => {
     
 })
 
-output.innerText = teamsCopia
+
 console.log( teamsCopia )
