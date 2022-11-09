@@ -60,4 +60,32 @@ for (let i = 0; i < arrayBici.length; i++) {
 console.log(`La bici più leggera è la ${minBici.name}, pesa ${minBici.peso} kg.`)
 
 
+/* CORREZIONE */
 
+
+const bici = [
+
+    { name: `Pinarello`, peso: 10},
+    { name: `Bianchi`, peso: 8},
+    { name: `Scott`, peso: 11},
+
+]
+
+let biciLeggera = bici[0]
+
+    
+    for (let i=0; i<bici.length; i++){
+        
+        let elementoCorrente = bici[i]
+        let { peso } = elementoCorrente  //di ogni elemento che confronto prendo soltanto il peso
+
+        if( peso < biciLeggera.peso ){
+
+            biciLeggera = elementoCorrente
+
+        }
+
+}
+
+console.log(biciLeggera)
+//document.getElementById(`output`).innerHTML = `${biciLeggera}`
